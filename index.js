@@ -50,11 +50,9 @@ app.post('/upload_file', upload.single('file'), (req, res) => {
     return res.status(400).json({ "success": false, "message": 20006 ,"user": null });
   }
 });
-
   
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
-
 
