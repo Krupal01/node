@@ -1,32 +1,31 @@
-
-const endPoint = "/login"
+const endPoint = "/user_register"
+const checkHeader = false
 
 body = {
-    "email": "abc@mail.com",
-    "password": "abcABC@12",
+    "name":"hi",
 }
 
 data = {
     "success": true,
+    "message": 20003,
     "user": {
-        "_id": "64ad86dc32b7127da530acbf",
         "name": "hiiii",
         "email": "hii@email.com",
         "phone": "7894561235",
-        "password": "de0cb9bc526347658f086ab536750ea6",
+        "password": "e10adc3949ba59abbe56e057f20f883e",
         "image": "",
-        "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGFkODZkYzMyYjcxMjdkYTUzMGFjYmYiLCJ0b2tlbiI6InFZWm9rRHZFclBRQzI4eDd3YXp0NVd4eUFNTkFLSUlmIiwiaWF0IjoxNjg5MDk0MDQwfQ.KtOxOJ7WlXXO1HBLBnVG0z6AxUsmmbPq6t29wLFxz1o",
-        "token": "qYZokDvErPQC28x7wazt5WxyAMNAKIIf",
+        "jwt": "",
+        "token": "",
         "referral_code": "CImGz3E",
         "referred_by": null,
         "referred_credit": 0,
         "userSave_id": [],
+        "_id": "64ad86dc32b7127da530acbf",
         "createdAt": "2023-07-11T16:44:12.289Z",
-        "updatedAt": "2023-07-11T16:49:03.927Z",
+        "updatedAt": "2023-07-11T16:44:12.289Z",
         "unique_id": 15,
         "__v": 0
     }
-
 }
 
 errormsg = { "success": false, "message": 20008 ,"user": null }
@@ -38,4 +37,4 @@ let data_module = {
     errormsg: errormsg
 }
 
-module.exports = {data_module,endPoint}
+module.exports = {data_module, endPoint , checkHeader}
